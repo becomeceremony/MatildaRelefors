@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matilda & Nick — Our Wedding</title>
+  <meta name="description" content="Matilda Relefors & Nick Pedersen — an elegant, editorial wedding website." />
+  <meta property="og:title" content="Matilda & Nick — Our Wedding" />
+  <meta property="og:description" content="Join us as we celebrate our marriage." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Refined serif & modern sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body class="antialiased">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" id="navbar" aria-label="Primary">
+      <div class="nav-inner container">
+        <a class="brand" href="#top" aria-label="Matilda and Nick homepage">
+          <span class="brand-mark">M&amp;N</span>
+          <span class="brand-text">Matilda &amp; Nick</span>
+        </a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#details">Wedding Details</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#rsvp-section">RSVP</a></li>
+          <li><a href="#travel">Travel</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero" role="region" aria-label="Hero: Matilda and Nick">
+      <div class="hero-layers" aria-hidden="true">
+        <!-- Film grain + paper texture layers for depth (CSS-controlled) -->
+        <div class="hero-image-wrap">
+          <img src="assets/hero-placeholder.jpg" alt="Matilda & Nick" class="hero-image" loading="lazy">
+        </div>
+
+        <!-- Oversized translucent monogram behind the names -->
+        <div class="hero-monogram" aria-hidden="true">M&amp;N</div>
+
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-inner">
+          <h1 class="hero-title">
+            <span class="hero-pre">The Wedding of</span>
+            <span class="hero-names">Matilda &amp; Nick</span>
+          </h1>
+
+          <div class="countdown" aria-live="polite" aria-atomic="true">
+            <div class="countdown-box" id="countdown-box" aria-hidden="false">
+              <div class="countdown-days" id="countdown-days">0</div>
+              <div class="countdown-sub">Days</div>
+            </div>
+
+            <div class="countdown-clock" id="countdown-clock" aria-hidden="true">00 : 00 : 00</div>
+            <div class="countdown-text">Until we say “I do”</div>
+          </div>
+
+          <p class="wedding-date">June 28, 2027 • Rosewood Garden Hall</p>
+
+          <div class="hero-ctas">
+            <a class="cta primary" id="rsvp-hero" href="#" role="button">RSVP</a>
+            <a class="cta ghost" href="#details">Wedding Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- OUR STORY -->
+    <section id="story" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-intro">A refined timeline — curated, intimate, and intentionally minimal.</p>
+
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <div class="timeline-media">
+              <img src="assets/story-meet.jpg" alt="How we met" loading="lazy">
+            </div>
+            <div class="timeline-content">
+              <h3>How we met</h3>
+              <p>At a friend's private exhibition — the conversation that quietly lasted all night.</p>
+              <time datetime="2018">2018</time>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal reverse">
+            <div class="timeline-media">
+              <img src="assets/story-firstdate.jpg" alt="First date" loading="lazy">
+            </div>
+            <div class="timeline-content">
+              <h3>First date</h3>
+              <p>A candlelit dinner by the water — laughter, long walks, and the taste of pastry shared between us.</p>
+              <time datetime="2019">2019</time>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-media">
+              <img src="assets/story-proposal.jpg" alt="The proposal" loading="lazy">
+            </div>
+            <div class="timeline-content">
+              <h3>The proposal</h3>
+              <p>A quiet cove, an evening boat, and a ring hidden in a sea-shell — private and perfect.</p>
+              <time datetime="2026">2026</time>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal reverse">
+            <div class="timeline-media">
+              <img src="assets/story-lookingahead.jpg" alt="Looking ahead" loading="lazy">
+            </div>
+            <div class="timeline-content">
+              <h3>Looking ahead</h3>
+              <p>Tiny rituals, long coffees, the promise of evenings together for decades to come.</p>
+              <time datetime="2027">2027</time>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WEDDING DETAILS -->
+    <section id="details" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Wedding Details</h2>
+        <p class="section-intro">A considered orchestration of time and place.</p>
+
+        <div class="cards-grid">
+          <article class="card reveal" aria-labelledby="ceremony-title">
+            <h3 id="ceremony-title">Ceremony</h3>
+            <p class="card-strong">4:00 PM</p>
+            <p class="muted">St. Clara's Chapel — intimate service</p>
+          </article>
+
+          <article class="card reveal" aria-labelledby="reception-title">
+            <h3 id="reception-title">Reception</h3>
+            <p class="card-strong">6:00 PM</p>
+            <p class="muted">Rosewood Garden Hall — seated dinner & dancing</p>
+          </article>
+
+          <article class="card reveal" aria-labelledby="dress-title">
+            <h3 id="dress-title">Dress Code</h3>
+            <p class="card-strong">Black Tie • Evening Elegance</p>
+            <p class="muted">Tailored suits, formal gowns, refined footwear</p>
+          </article>
+
+          <article class="card reveal" aria-labelledby="parking-title">
+            <h3 id="parking-title">Parking & Arrival</h3>
+            <p class="card-strong">Valet & guest drop-off</p>
+            <p class="muted">Arrive 30 minutes early to be seated</p>
+          </article>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-card-inner">
+            <h4>Venue</h4>
+            <p class="muted">Rosewood Garden Hall — 123 Celebration Lane, City</p>
+            <div class="map-embed" aria-hidden="false">
+              <iframe title="Venue map" src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy"></iframe>
+            </div>
+
+            <div class="detail-actions">
+              <a class="btn-outline" href="#travel">Travel Info</a>
+              <a class="btn" id="rsvp-form-link" href="#">RSVP via Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-intro">An editorial selection — moments, texture and light.</p>
+
+        <div class="editorial-grid reveal" id="masonry">
+          <!-- Intentional large/small tiles — replace images -->
+          <figure class="grid-item large">
+            <img src="assets/gallery1.jpg" alt="Gallery photo 1" loading="lazy" tabindex="0" data-caption="Captured in summer light.">
+          </figure>
+          <figure class="grid-item tall">
+            <img src="assets/gallery2.jpg" alt="Gallery photo 2" loading="lazy" tabindex="0" data-caption="An evening to remember.">
+          </figure>
+          <figure class="grid-item small">
+            <img src="assets/gallery3.jpg" alt="Gallery photo 3" loading="lazy" tabindex="0" data-caption="Quiet moments.">
+          </figure>
+          <figure class="grid-item wide">
+            <img src="assets/gallery4.jpg" alt="Gallery photo 4" loading="lazy" tabindex="0" data-caption="The gardens at dusk.">
+          </figure>
+          <figure class="grid-item small">
+            <img src="assets/gallery5.jpg" alt="Gallery photo 5" loading="lazy" tabindex="0" data-caption="First dance preview.">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Lux lightbox -->
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+        <div class="lightbox-inner" id="lightbox-content" tabindex="0">
+          <!-- image + caption injected -->
+        </div>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp-section" class="section section-alt">
+      <div class="container" id="rsvp">
+        <h2 class="section-title">RSVP</h2>
+        <p class="section-intro">Kindly confirm your attendance by May 15, 2027.</p>
+
+        <div class="rsvp-panel reveal">
+          <p class="muted">Please use our RSVP form so we can finalize seating and catering.</p>
+          <a class="btn accent" id="rsvp-button" href="#" target="_blank" rel="noopener">RSVP Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel" class="section">
+      <div class="container">
+        <h2 class="section-title">Travel</h2>
+        <p class="section-intro">Travel & accommodations for our guests.</p>
+        <div class="grid-2 reveal">
+          <div>
+            <h3>Getting There</h3>
+            <p>Nearest airport: City International (45 minutes). Recommended hotels: The Grand & The Carlton (concierge code: NICKMAT).</p>
+          </div>
+          <div>
+            <h3>Local Transport</h3>
+            <p>Shuttle service between select hotels and the venue; details emailed before the wedding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="accordion" role="tablist">
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc1" id="acc1-btn">Can I bring a plus one?</button>
+            <div id="acc1" class="accordion-panel" role="region" aria-labelledby="acc1-btn">Please check your invitation — plus ones are by invitation only.</div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc2" id="acc2-btn">Are kids invited?</button>
+            <div id="acc2" class="accordion-panel" role="region" aria-labelledby="acc2-btn">The reception is adults-only; reach out if you require special arrangements.</div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc3" id="acc3-btn">Dress code?</button>
+            <div id="acc3" class="accordion-panel" role="region" aria-labelledby="acc3-btn">Black tie • evening elegance recommended.</div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc4" id="acc4-btn">Arrival time?</button>
+            <div id="acc4" class="accordion-panel" role="region" aria-labelledby="acc4-btn">Please arrive 30 minutes before the ceremony to be comfortably seated.</div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc5" id="acc5-btn">Registry?</button>
+            <div id="acc5" class="accordion-panel" role="region" aria-labelledby="acc5-btn">Your presence is the greatest gift; registry details are shared privately.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">Designed with love for Matilda &amp; Nick</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram (replace link)" class="social">IG</a>
+        <a href="#" aria-label="Email (replace link)" class="social">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
