@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Matilda & Nick — Our Wedding</title>
   <meta name="description" content="Matilda Relefors & Nick Pedersen — an elegant, editorial wedding website." />
-  <meta property="og:title" content="Matilda & Nick — Our Wedding" />
-  <meta property="og:description" content="Join us as we celebrate our marriage." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Refined serif & modern sans -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="scripts.js"></script>
@@ -43,12 +40,10 @@
     <!-- HERO -->
     <section id="home" class="hero" role="region" aria-label="Hero: Matilda and Nick">
       <div class="hero-layers" aria-hidden="true">
-        <!-- Film grain + paper texture layers for depth (CSS-controlled) -->
         <div class="hero-image-wrap">
           <img src="assets/hero-placeholder.jpg" alt="Matilda & Nick" class="hero-image" loading="lazy">
         </div>
 
-        <!-- Oversized translucent monogram behind the names -->
         <div class="hero-monogram" aria-hidden="true">M&amp;N</div>
 
         <div class="hero-overlay"></div>
@@ -194,7 +189,6 @@
         <p class="section-intro">An editorial selection — moments, texture and light.</p>
 
         <div class="editorial-grid reveal" id="masonry">
-          <!-- Intentional large/small tiles — replace images -->
           <figure class="grid-item large">
             <img src="assets/gallery1.jpg" alt="Gallery photo 1" loading="lazy" tabindex="0" data-caption="Captured in summer light.">
           </figure>
@@ -213,13 +207,10 @@
         </div>
       </div>
 
-      <!-- Lux lightbox -->
       <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
         <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
-        <div class="lightbox-inner" id="lightbox-content" tabindex="0">
-          <!-- image + caption injected -->
-        </div>
+        <div class="lightbox-inner" id="lightbox-content" tabindex="0"></div>
         <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
       </div>
     </section>
